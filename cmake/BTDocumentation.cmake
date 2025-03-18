@@ -224,6 +224,7 @@ IF(BUILD_HTML)
                 "/usr/local/share/sgml/docbook/xsl-stylesheets/html/"
                 "/usr/local/share/xsl/docbook/html/"
                 "/usr/local/share/xml/docbook/stylesheet/nwalsh/html/"
+                "/opt/homebrew/opt/docbook-xsl/docbook-xsl/html/"
             NO_DEFAULT_PATH)
         IF(NOT BT_DOCBOOK_XSL_HTML_CHUNK_XSL)
             MESSAGE(FATAL_ERROR "The required file html/chunk.xsl from \
@@ -286,6 +287,7 @@ IF(BUILD_PDF)
                 "/usr/local/share/xml/docbook/stylesheet/docbook-xsl/fo/"
                 "/usr/local/share/sgml/docbook/xsl-stylesheets/fo/"
                 "/usr/local/share/xsl/docbook/fo/"
+                "/opt/homebrew/opt/docbook-xsl/docbook-xsl/fo"
             NO_DEFAULT_PATH)
         IF(NOT BT_DOCBOOK_XSL_PDF_DOCBOOK_XSL)
             MESSAGE(FATAL_ERROR "The required file fo/docbook.xsl from \

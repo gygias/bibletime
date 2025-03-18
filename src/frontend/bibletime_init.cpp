@@ -796,8 +796,8 @@ void BibleTime::initMenubar() {
     #else
     // On MAC OS, the settings actions will be moved to a system menu item.
     // Therefore the settings menu would be empty, so we do not show it.
-    m_fileMenu->addAction(m_setPreferencesAction);
-    m_fileMenu->addAction(m_bookshelfWizardAction);
+    m_fileMenu->addAction(m_actions->settings.configureBibleTime);
+    m_fileMenu->addAction(m_actions->settings.bookshelfManager);
     #endif
 
     // Help menu:
